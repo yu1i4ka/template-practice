@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 100%
+}
+
+/*Логотип + главное меню , навигация */
+.main-header {
+	height: 80px;
+	width: 100%;
+	font-family: 'MuseoSans';
+	color: #82868f;
+	text-transform: uppercase;
+	position: fixed;
+	background: #f7fdfe;
+	text-align: center;
+	padding-right: 200px;
+}
+.logo {
+	font-size: 30px;
+	position: relative;
+	top: 25px;
+}
+.logo a {
+	font-family: 'MuseoSans';
+	color: #82868f;
+	text-decoration: none;
+	margin-right: 850px;
+}
+.logo a:hover {
+	text-shadow: 0 5px 10px;
+}
+.navigation li a {
+	text-decoration: none;
+	color: #82868f;
+}
+.navigation {
+	margin-right: 270px;
+}
+.navigation li {
+	color: #82868f;
+	display: inline-block;
+	font-size: 14px;
+}
+.navigation li:nth-child(1),
+.navigation li:nth-child(2),
+.navigation li:nth-child(3) {
+	margin-left: 35px;
+}
+.active {
+	width: 124px;
+	height: 26px;
+	border-radius: 18px;
+	background-color: #0ebfdd;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+	font-size: 14px;
+	margin-left: 25px;
+}
+li.active a {
+	color: #fff;
+}
+.navigation li:nth-child(1):hover,
+.navigation li:nth-child(2):hover,
+.navigation li:nth-child(3):hover {
+	border-radius: 18px;
+	background-color: #0ebfdd;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	padding: 10px;
+}
+.menu ul {
+	position: absolute;
+	top: 25px;
+	right: 70px;
+}
+.navigation li:nth-child(1) a:hover,
+.navigation li:nth-child(2) a:hover,
+.navigation li:nth-child(3) a:hover {
+	color: #fff;
+}
+
+
+
+/*Стили для блока Миссия*/
+
+
+.mission {
+	background-image: url(img/mountain.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	color: #f7fdfe;
+	padding-top: 80px;
+}
+.mission h2 {
+	padding-top: 400px;
+	text-align: center;
+	padding-bottom: 17px;
+	font-size: 44px;
+}
+.mission h2:after, .mission h2:before {
+	content: url(img/star.png);
+}
+.mission h2:after{
+	padding-left: 17px;
+	position: relative;
+	bottom: 7px; 
+}
+.mission h2:before {
+	padding-right: 17px;
+	position: relative;
+	bottom: 7px; 
+}
+p.mission-description {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	padding-bottom: 87px;
+}
+
+
+/*Стили для блока О нас */
+
+
+.about h2 {
+	color: #0ebfdd;
+	font-size: 44px;
+	text-align: center;
+	padding: 66px 0 33px 0;
+
+ }
+ p.about-details {
+	color: #45494d;
+	text-align: center;
+	padding-bottom: 69px;
+ }
+
+/*Стили для блока Команда*/
+
+.faces {
+	list-style-type: none;
+}
+.team {
+	background: #0ebfdd;
+	padding-bottom: 64px;
+}
+.team h2 {
+	color: #fff;
+	font-size: 44px;
+	line-height: 28px;
+	text-align: center;
+	padding: 59px 0 106px 0;
+}
+.team img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+.faces {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.team figure {
+	margin: 0 35px 0;
+}
+figcaption {
+	text-align: center;
+	color: #f7fdfe;
+}
+.name {
+	font-weight: bold;
+	margin-top: 12px;
+}
+.position {
+	display: inline-block;
+	font-style: italic;
+	padding-bottom: 105px;
+}
+button.connect {
+	display: block;
+	width: 178px;
+	height: 40px;
+	border: 1px solid #f9fbfb;
+	border-radius: 17px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: auto;
+	color: #f7fdfe;
+	background: #0ebfdd;
+}
+button:hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 20px #fff;
+}
+
+
+/* Стили для блока с картой*/
+
+.map {
+	width: 100%;
+}
+
+
+/*Стили для оформления футера*/
+
+.footer {
+	height: 120px;
+	background: #45494d;
+	padding-top: 30px;
+}
+.info ul{
+	text-transform: uppercase;
+	font-size: 12px;
+	background: #45494d;
+	display: inline-block;
+}
+.info ul li {
+	display: inline;
+}
+.info ul > li > a {
+	color: #d7dee4;
+	text-decoration: none;
+}
+.info {
+	display: block;
+	border-bottom: 1px solid #5a5e62;
+	padding-bottom: 30px;
+	position: relative;
+	margin: 0 70px 20px;
+}
+.info ul > li:first-child, /* nth-child(1) замінити на first-child */
+.info ul > li:nth-child(2) /* окрім цього потрібно уточняти чи робите звернення до всіх li в середині ul чи лише для дочірніх li ul. Використосувати >  */ {
+	margin-right: 10px;
+}
+.social {
+	display: inline-block;
+	position: absolute;
+	top: -12px;
+	right: 1px;
+}
+.privacy {
+	float: right;
+	color: #73767a;
+	margin-right: 70px; 
+}
+.privacy > li > a {
+	text-decoration: none;
+	color: #73767a;
+}
+.privacy li {
+	display: inline;
+	text-decoration: none;
+	margin-left: 15px;
+	padding-left: 15px;
+	border-left: 1px solid #73767a;
+}
+.privacy li:first-child {
+	border: 0;
+}
+.clear {
+	clear: both;
+}
+/* 
+використовуєте float, а де відбувається очищення потоку я не побачив. Перечитати про float. 
+ */
